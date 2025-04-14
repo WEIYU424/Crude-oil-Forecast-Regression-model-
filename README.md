@@ -1,2 +1,51 @@
-# Crude-oil-Forecast-Regression-model-
-Crude oil price forecast using Linear, Polynomial, and Random Forest regression. Model comparison with R², MAE, RMSE, and future prediction.
+原油价格预测模型对比分析项目
+
+项目简介
+
+本项目基于 Kaggle 原油历史数据集，尝试通过多种回归模型预测原油价格，并比较不同模型的预测效果。分析流程涵盖数据清洗、特征工程、建模、评估与趋势可视化，旨在提升对金融时序数据的理解能力和建模实践能力。
+
+---
+
+项目结构
+
+Part 1: 数据导入与初步探索
+- 使用 `pandas` 加载原油价格数据，完成数据类型转换与基础缺失值处理。
+- 使用 matplotlib 与 seaborn 初步可视化趋势。
+
+Part 2: 特征工程
+- 创建如过去7日均价、价格变动幅度等特征变量。
+- 时间序列相关特征处理。
+
+Part 3: 模型训练与对比
+- 构建以下三种模型用于价格预测：
+  - 线性回归（Linear Regression）
+  - 多项式回归（Polynomial Regression）
+  - 随机森林回归（Random Forest Regressor）
+
+Part 4: 模型效果评估
+- 采用 `R²`, `MAE`, `RMSE` 等多种评估指标进行模型对比。
+- 可视化真实值与预测值的拟合效果图与误差图。
+
+Part 5: 结论总结
+- 线性回归模型: 表现最佳，兼具高解释度与低误差。
+- 随机森林: 稳定性较好，适用于波动区间预测。
+- 多项式回归: 易过拟合，表现不佳。
+- 后续还可以尝试 Ridge、Lasso、KNN 等回归模型拓展。
+
+Part 6: 原油价格趋势预测
+- 使用最佳模型（线性回归）预测未来若干期原油价格。
+
+---
+
+使用技术
+
+- Python: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+- 回归模型：Linear, Polynomial, Random Forest
+
+---
+
+项目亮点
+
+- 金融商品的机器学习预测项目实践。
+- 模型比较 + 可视化分析 + 商业总结完整流程。
+- 可拓展为期货/ETF类预测项目模板。
